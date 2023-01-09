@@ -31,4 +31,5 @@ public class LoginTest {
         loginSteps.clickLogin();
         loginSteps.userIsLoggedIn("Cosmin Fast");
     }
+
 }
