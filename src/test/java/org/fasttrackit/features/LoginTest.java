@@ -15,13 +15,14 @@ public class LoginTest {
     @Managed(uniqueSession = true)
     public WebDriver driver;
 
-    @Steps
-    private LoginSteps loginSteps;
-
     @Before
     public void maximiseBrowser(){
         driver.manage().window().maximize();
     }
+    @Steps
+    private LoginSteps loginSteps;
+
+
 
     @Test
     public void validLoginTest(){
