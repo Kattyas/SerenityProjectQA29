@@ -1,20 +1,14 @@
 package org.fasttrackit.features;
+import org.junit.Test;
 
-import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Managed;
-import org.junit.Before;
-import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
+public class WishListTest extends BaseTest{
 
-@RunWith(SerenityRunner.class)
-public class WishListTest {
+    @Test
+    public void addToWishlistTest(){
 
-    @Managed(uniqueSession = true)
-    private WebDriver driver;
 
-    @Before
-    public void maximiseBrowser(){
-        driver.manage().window().maximize();
+
+
     }
 
 

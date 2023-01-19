@@ -1,22 +1,7 @@
 package org.fasttrackit.features;
 
-import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Managed;
-import org.junit.Before;
-import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
+public class SearchTest extends BaseTest{
 
-@RunWith(SerenityRunner.class)
-public class SearchTest {
-
-    @Managed(uniqueSession = true)
-    private WebDriver driver;
-
-
-    @Before
-    public void maximiseBrowser(){
-        driver.manage().window().maximize();
-    }
 
 
 

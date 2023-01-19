@@ -1,27 +1,26 @@
 package org.fasttrackit.features;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Steps;
-import org.fasttrackit.steps.LoginSteps;
-import org.junit.Before;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class RegisterTest {
+public class RegisterTest extends BaseTest{
 
-    @Managed(uniqueSession = true)
-    private WebDriver driver;
-
-    @Before
-    public void maximiseBrowser(){
-        driver.manage().window().maximize();
+    @Test
+    public void accountRegisterTest(){
+        registerSteps.navigateToRegisterPage();
+        registerSteps.typeFirstName("Kata");
+        registerSteps.typeLastName("Katty");
+        registerSteps.typeEmailField("A@yahoo.com");
+        registerSteps.typePassword("1234567890");
+        registerSteps.typeConfPassword("1234567890");
+        registerSteps.clickRegister();
     }
 
-    @Steps
-    private LoginSteps loginSteps;
+
+
 
 
 
